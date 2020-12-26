@@ -107,7 +107,7 @@ class Search extends CB_Controller
 		/**
 		 * 게시판 목록에 필요한 정보를 가져옵니다.
 		 */
-		$this->Post_model->allow_search_field = array('post_title', 'post_content', 'post_userid', 'post_nickname','address'); // 검색이 가능한 필드
+		$this->Post_model->allow_search_field = array('post_title', 'post_content', 'post_userid', 'post_nickname'); // 검색이 가능한 필드
 		$this->Post_model->search_field_equal = array('post_userid'); // 검색중 like 가 아닌 = 검색을 하는 필드
 
 		$per_page = 15;

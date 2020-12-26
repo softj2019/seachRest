@@ -645,7 +645,7 @@ if ( ! function_exists('banner')) {
 	}
 }
 /**
- * 배너 출력하기
+ * 매인 배너 출력하기
  */
 if ( ! function_exists('banner_doctormoa')) {
     function banner_doctormoa($position = '', $type = 'rand', $limit = 1, $start_tag = '', $end_tag = '')
@@ -697,8 +697,8 @@ if ( ! function_exists('banner_doctormoa')) {
 
                     $html .= $start_tag;
 
-                    if (element('ban_url', $val)) {
-                        $html .= '<a href="' . site_url('gotourl/banner/' . element('ban_id', $val)) . '" ';
+
+                        $html .= '<a href="'.element('ban_url', $val).'" ';
                         if (element('ban_target', $val)) {
                             $html .= ' target="_blank" ';
                         }
@@ -708,12 +708,9 @@ if ( ! function_exists('banner_doctormoa')) {
                                 element('ban_image', $val),
                                 element('ban_width', $val),
                                 element('ban_height', $val)
-                            ).');">';
-                    }
+                    ) . ');">&nbsp;</a>';
 
-                    if (element('ban_url', $val)) {
-                        $html .= '</a>';
-                    }
+
                     $html .= $end_tag;
                 }
             }

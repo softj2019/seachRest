@@ -11,6 +11,7 @@
     <?php if (element('meta_author', $layout)) { ?><meta name="author" content="<?php echo html_escape(element('meta_author', $layout)); ?>"><?php } ?>
     <?php if (element('favicon', $layout)) { ?><link rel="shortcut icon" type="image/x-icon" href="<?php echo element('favicon', $layout); ?>" /><?php } ?>
     <?php if (element('canonical', $view)) { ?><link rel="canonical" href="<?php echo element('canonical', $view); ?>" /><?php } ?>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/reset.css" rel="stylesheet" type="text/css">
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/common.css" rel="stylesheet" type="text/css">
@@ -107,14 +108,14 @@
                 ?>
                 <li><a href="<?php echo site_url('mypage'); ?>">마이페이지</a></li>
             <?php }?>
-            <li><a href="/main/category">진료선택</a></li>
-            <li><a href="/board/b-a-2">방문후기</a></li>
-            <li><a href="/board/b-a-3">자유게시판</a></li>
-            <li><a href="/board/b-c-1">질문과 답변</a></li>
-            <li><a href="/board/b-b-1">제품판매</a></li>
-            <li><a href="/board/b-b-2">구인구직</a></li>
+<!--            <li><a href="/main/category">진료선택</a></li>-->
+            <li><a href="/board/b-a-2">실장게시판</a></li>
+<!--            <li><a href="/board/b-a-3">자유게시판</a></li>-->
+<!--            <li><a href="/board/b-c-1">질문과 답변</a></li>-->
+<!--            <li><a href="/board/b-b-1">제품판매</a></li>-->
+<!--            <li><a href="/board/b-b-2">구인구직</a></li>-->
             <li><a href="/board/b-a-3">공지사항</a></li>
-            <li><a href="/write/b-a-1">의사/병원 등록하기</a></li>
+            <li><a href="/write/b-a-1">업체등록신청</a></li>
         </ul>
 
     </div>
@@ -151,13 +152,13 @@
             </header>
             <div class="modalBody pt0 ham-body">
                 <ul class="cont-ul">
-                    <li><a href="/board/b-a-2">방문후기</a></li>
-                    <li><a href="/board/b-a-3">자유게시판</a></li>
-                    <li><a href="/board/b-c-1">질문과 답변</a></li>
-                    <li><a href="/board/b-b-1">제품판매</a></li>
-                    <li><a href="/board/b-b-2">구인구직</a></li>
+                    <li><a href="/board/b-a-2">실장게시판</a></li>
+                    <!--            <li><a href="/board/b-a-3">자유게시판</a></li>-->
+                    <!--            <li><a href="/board/b-c-1">질문과 답변</a></li>-->
+                    <!--            <li><a href="/board/b-b-1">제품판매</a></li>-->
+                    <!--            <li><a href="/board/b-b-2">구인구직</a></li>-->
                     <li><a href="/board/b-a-3">공지사항</a></li>
-                    <li><a href="/write/b-a-1">의사/병원 등록하기</a></li>
+                    <li><a href="/write/b-a-1">업체등록신청</a></li>
                 </ul>
             </div>
         </div>
@@ -172,11 +173,11 @@
             <li><a href="<?php echo document_url('aboutus'); ?>">이용안내</a></li>
         </ul>
         <ul class="foot-ul foot-sns flexcenter">
-            <li><a href="https://www.facebook.com/%EB%8B%A5%ED%84%B0%EB%AA%A8%EC%95%84-112086317327626/?modal=admin_todo_tour" class="facebook-i"></a></li>
-            <li><a href="https://www.instagram.com/doctor__moa/" class="insta-i"></a></li>
-            <li><a href="https://pf.kakao.com/_mHCdK" class="kakao-i"></a></li>
-            <li><a href="https://twitter.com/FVWNS1qp9IMUvw0" class="twitter-i"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCl6MwKYM27exMNGsSJxCO9A/featured?view_as=subscriber" class="youtube-i"></a></li>
+            <li><a href="" class="facebook-i"></a></li>
+            <li><a href="" class="insta-i"></a></li>
+            <li><a href="" class="kakao-i"></a></li>
+            <li><a href="" class="twitter-i"></a></li>
+            <li><a href="" class="youtube-i"></a></li>
         </ul>
         <ul class="foot-inf">
             <li>상호명 : 닥터모아 ㅣ 사업자등록번호 : 000-00-00000</li>

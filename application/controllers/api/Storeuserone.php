@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Storeuser extends CB_Controller
+class Storeuserone extends CB_Controller
 {
     /**
      * 모델을 로딩합니다
@@ -160,18 +160,7 @@ class Storeuser extends CB_Controller
 
         $view['view']['data'] = $result;
         $result['req_mem_point']=element("mem_point",$req_mem);
-        //rest 성공시
-        //요청자 포인트 1 차감
-        if(element("mem_point",$req_mem)>0){
-            $this->Member_model->update(
-                element("mem_id",$req_mem),
-                array(
-                    "mem_point"=> element("mem_point",$req_mem) -1,
-                )
-            );
-        }
 
-//        $this->output->set_status_header(200);
         echo json_encode($result);
     }
 

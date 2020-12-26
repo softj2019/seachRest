@@ -20,7 +20,7 @@ if (element('syntax_highlighter', element('board', $view)) OR element('comment_s
 
 <?php echo element('headercontent', element('board', $view)); ?>
 
-<div class="content1">
+<div class="content1 board">
 	<?php echo show_alert_message($this->session->flashdata('message'), '<div class="alert alert-auto-close alert-dismissible alert-info"><button type="button" class="close alertclose" >&times;</button>', '</div>'); ?>
     <ul class="com-cont-ul">
         <li class="cont-ul-tit"><?php echo html_escape(element('post_title', element('post', $view))); ?></li>

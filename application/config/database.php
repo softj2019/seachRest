@@ -83,7 +83,7 @@ $query_builder = TRUE;
 */
 $db['default'] = array(
 	//'dsn'	=> 'mysql:host=localhost;dbname=yourdatabasenamehere',
-	'hostname' => 'localhost',
+	'hostname' => 'searchapp.c1awmov3by0y.ap-northeast-2.rds.amazonaws.com',
 	'username' => 'mydb',
 	'password' => '!1qazsoftj',
 	'database' => 'mydb',

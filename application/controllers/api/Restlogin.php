@@ -99,8 +99,9 @@ class Restlogin extends CB_Controller
 		 */
 		if ($this->form_validation->run() === false) {
 
-            $this->output->set_status_header(400);
-            $data["errors"]=$this->form_validation->_error();
+            $this->output->set_status_header(200);
+            $errorsData["errors"]=$this->form_validation->error_array();
+            echo json_encode($errorsData);
 		} else {
 			/**
 			 * 유효성 검사를 통과한 경우입니다.
@@ -121,10 +122,11 @@ class Restlogin extends CB_Controller
 
 			// 이벤트가 존재하면 실행합니다
 			Events::trigger('after', $eventname);
-            $this->output->set_status_header(400);
 
+            $this->output->set_status_header(200);
+            echo json_encode($userinfo);
 		}
-        echo json_encode($data);
+
 	}
 
 

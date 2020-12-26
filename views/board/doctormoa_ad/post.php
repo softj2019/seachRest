@@ -528,7 +528,7 @@ if (element('syntax_highlighter', element('board', $view)) OR element('comment_s
 
 
     <div class="content1">
-        <div class="btn-group pull-left hidden" role="group" aria-label="...">
+        <div class="btn-group pull-left" role="group" aria-label="...">
             <?php if (element('modify_url', $view)) { ?>
                 <a href="<?php echo element('modify_url', $view); ?>" class="btn btn-default btn-sm">수정</a>
             <?php } ?>

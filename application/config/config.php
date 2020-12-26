@@ -61,7 +61,7 @@ $config['uri_segment_cmall_item'] ='item';  //Cmall item 페이지 주소
  * 서브에 설치하는 경우 올바른 예 ) http://www.test.com/subdir/
  * 서브에 설치하는 경우 잘못된 예 ) http://www.test.com/subdir/index.php
  */
-//$config['base_url'] = 'https://localhost/';
+//$config['base_url'] = 'http://localhost/';
 //if (empty($config['base_url'])) exit("&dollar;config&lsqb;&apos;base_url&apos;&rsqb;  need to be set up in application/config/config.php");  // base_url 의 값을 입력하신 후에는 여기 if 문 자체를 주석처리해도 좋습니다
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $config['base_url'] .= "://" . $_SERVER['HTTP_HOST'];
@@ -499,7 +499,7 @@ $config['encryption_key'] = '!1qazsoftj';
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
-//$config['sess_save_path'] =  APPPATH.'cache/session/';
+$config['sess_save_path'] =  APPPATH.'cache/session/';
 $config['sess_save_path'] =  NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
@@ -623,6 +623,7 @@ $config['csrf_exclude_uris'][] = 'selfcert/kcb_ipin_return';
 $config['csrf_exclude_uris'][] = 'selfcert/kcb_ipin_return';
 
 $config['csrf_exclude_uris'][] = 'api/restlogin';
+$config['csrf_exclude_uris'][] = 'api/storeproc';
 
 /*
 |--------------------------------------------------------------------------

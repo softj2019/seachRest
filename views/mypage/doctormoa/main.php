@@ -18,7 +18,7 @@
         </div>
         <ul class="cont-ul">
             <li class="bor-top"><a href="<?php echo site_url('membermodify'); ?>">내정보수정</a></li>
-            <li><a href="">방문후기</a></li>
+            <li><a href="">실장게시판</a></li>
             <li><a href="<?php echo site_url('login/logout?url=' . urlencode(current_full_url())); ?>">로그아웃</a></li>
         </ul>
     </div>

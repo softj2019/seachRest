@@ -11,6 +11,7 @@
     <?php if (element('meta_author', $layout)) { ?><meta name="author" content="<?php echo html_escape(element('meta_author', $layout)); ?>"><?php } ?>
     <?php if (element('favicon', $layout)) { ?><link rel="shortcut icon" type="image/x-icon" href="<?php echo element('favicon', $layout); ?>" /><?php } ?>
     <?php if (element('canonical', $view)) { ?><link rel="canonical" href="<?php echo element('canonical', $view); ?>" /><?php } ?>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/reset.css" rel="stylesheet" type="text/css">
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo my_base_url(element('layout_skin_url', $layout)); ?>/assets/css/common.css" rel="stylesheet" type="text/css">
@@ -113,15 +114,13 @@
                 ?>
                 <li><a href="<?php echo site_url('mypage'); ?>">마이페이지</a></li>
             <?php }?>
-            <li><a href="/main/category">진료선택</a></li>
-            <li><a href="/board/b-a-2">방문후기</a></li>
-            <li><a href="/board/b-a-3">자유게시판</a></li>
-            <li><a href="/board/b-c-1">질문과 답변</a></li>
-            <li><a href="/board/b-b-1">제품판매</a></li>
-            <li><a href="/board/b-b-2">구인구직</a></li>
+            <li><a href="/board/b-a-2">실장게시판</a></li>
+            <!--            <li><a href="/board/b-a-3">자유게시판</a></li>-->
+            <!--            <li><a href="/board/b-c-1">질문과 답변</a></li>-->
+            <!--            <li><a href="/board/b-b-1">제품판매</a></li>-->
+            <!--            <li><a href="/board/b-b-2">구인구직</a></li>-->
             <li><a href="/board/b-a-3">공지사항</a></li>
-            <li><a href="/write/b-a-1">의사/병원 등록하기</a></li>
-        </ul>
+            <li><a href="/write/b-a-1">업체등록신청</a></li>
 
     </div>
 
@@ -134,13 +133,13 @@
             </header>
             <div class="modalBody pt0 ham-body">
                 <ul class="cont-ul">
-                    <li><a href="/board/b-a-2">방문후기</a></li>
-                    <li><a href="/board/b-a-3">자유게시판</a></li>
-                    <li><a href="/board/b-c-1">질문과 답변</a></li>
-                    <li><a href="/board/b-b-1">제품판매</a></li>
-                    <li><a href="/board/b-b-2">구인구직</a></li>
+                    <li><a href="/board/b-a-2">실장게시판</a></li>
+                    <!--            <li><a href="/board/b-a-3">자유게시판</a></li>-->
+                    <!--            <li><a href="/board/b-c-1">질문과 답변</a></li>-->
+                    <!--            <li><a href="/board/b-b-1">제품판매</a></li>-->
+                    <!--            <li><a href="/board/b-b-2">구인구직</a></li>-->
                     <li><a href="/board/b-a-3">공지사항</a></li>
-                    <li><a href="/write/b-a-1">의사/병원 등록하기</a></li>
+                    <li><a href="/write/b-a-1">업체등록신청</a></li>
                 </ul>
             </div>
         </div>

@@ -66,10 +66,8 @@
     </div>
     <div class="main-slider">
         <div class="m-slider slick">
-<!--            --><?php //banner/_doctormoa($position = 'main_top', $type = 'rand', $limit = 3, $start_tag = '<div>', $end_tag = '</div>') ?>
-            <div><a href="" style="background-image: url(<?php echo element('layout_skin_url', $layout); ?>/assets/img/event1.png);"></a></div>
-            <div><a href="" style="background-image: url(<?php echo element('layout_skin_url', $layout); ?>/assets/img/event2.png);"></a></div>
-            <div><a href="" style="background-image: url(<?php echo element('layout_skin_url', $layout); ?>/assets/img/event3.png);"></a></div>
+            <?php echo banner_doctormoa($position = 'main_top', $type = 'rand', $limit = 3, $start_tag = '<div>', $end_tag = '</div>') ?>
+
         </div>
 
     </div>
@@ -141,30 +139,30 @@
         </form>
     </div>
     <div class="nav-box clearfix">
-        <div class="i-nav clearfix">
-            <ul>
-                <li><a href="/board/b-a-1?category_id=1"><i class="nav-mo"></i>성형외과</a></li>
-                <li><a href="/board/b-a-1?category_id=2"><i class="nav-sk"></i>피부과</a></li>
-                <li><a href="/board/b-a-1?category_id=5"><i class="nav-dent"></i>치과</a></li>
-                <li><a href="/board/b-a-1?category_id=4"><i class="nav-me"></i>한의원</a></li>
-                <li><a href="/board/b-a-1?category_id=3"><i class="nav-bt"></i>뷰티샵</a></li>
-                <li><a href="/main/category"><i class="nav-more"></i>더보기</a></li>
-            </ul>
-        </div>
+<!--        <div class="i-nav clearfix">-->
+<!--            <ul>-->
+<!--                <li><a href="/board/b-a-1?category_id=1"><i class="nav-mo"></i>성형외과</a></li>-->
+<!--                <li><a href="/board/b-a-1?category_id=2"><i class="nav-sk"></i>피부과</a></li>-->
+<!--                <li><a href="/board/b-a-1?category_id=5"><i class="nav-dent"></i>치과</a></li>-->
+<!--                <li><a href="/board/b-a-1?category_id=4"><i class="nav-me"></i>한의원</a></li>-->
+<!--                <li><a href="/board/b-a-1?category_id=3"><i class="nav-bt"></i>뷰티샵</a></li>-->
+<!--                <li><a href="/main/category"><i class="nav-more"></i>더보기</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
         <?php
-        $config2 = array(
-            'skin' => 'doctormoa_chart',
-            'brd_key' => 'b-a-1',
-            'limit' => 30,
-            'length' => 40,
-            'is_gallery' => '1',
-            'image_width' => '',
-            'image_height' => '',
-            'cache_minute' => 1,
-            'findex'=>'post_hit', //정렬키
-            'foder'=>'DESC', //정렬방법
-        );
-        echo $this->board->latest($config2);
+//        $config2 = array(
+//            'skin' => 'doctormoa_chart',
+//            'brd_key' => 'b-a-1',
+//            'limit' => 30,
+//            'length' => 40,
+//            'is_gallery' => '1',
+//            'image_width' => '',
+//            'image_height' => '',
+//            'cache_minute' => 1,
+//            'findex'=>'post_hit', //정렬키
+//            'foder'=>'DESC', //정렬방법
+//        );
+//        echo $this->board->latest($config2);
         ?>
     </div>
     <div class="main clearfix">
@@ -192,7 +190,7 @@
                     'is_gallery' => '1',
                     'image_width' => '',
                     'image_height' => '',
-                    'cache_minute' => 1,
+                    'cache_minute' => '',
                     'findex'=>'post_hit', //정렬키
                     'foder'=>'DESC', //정렬방법
                 );
@@ -224,55 +222,55 @@
                     echo $this->board->latest($config_side1);
 
                     //자유게시판
-                    $config_side2 = array(
-                        'skin' => 'doctormoa_main',
-                        'brd_key' => 'b-a-3',
-                        'limit' => 5,
-                        'length' => 40,
-                        'is_gallery' => '',
-                        'image_width' => '',
-                        'image_height' => '',
-                        'cache_minute' => 1,
-                    );
-                    echo $this->board->latest($config_side2);
+//                    $config_side2 = array(
+//                        'skin' => 'doctormoa_main',
+//                        'brd_key' => 'b-a-3',
+//                        'limit' => 5,
+//                        'length' => 40,
+//                        'is_gallery' => '',
+//                        'image_width' => '',
+//                        'image_height' => '',
+//                        'cache_minute' => 1,
+//                    );
+//                    echo $this->board->latest($config_side2);
 
                     //질문과 답변
-                    $config_side3 = array(
-                        'skin' => 'doctormoa_main',
-                        'brd_key' => 'b-c-1',
-                        'limit' => 5,
-                        'length' => 40,
-                        'is_gallery' => '',
-                        'image_width' => '',
-                        'image_height' => '',
-                        'cache_minute' => 1,
-                    );
-                    echo $this->board->latest($config_side3);
+//                    $config_side3 = array(
+//                        'skin' => 'doctormoa_main',
+//                        'brd_key' => 'b-c-1',
+//                        'limit' => 5,
+//                        'length' => 40,
+//                        'is_gallery' => '',
+//                        'image_width' => '',
+//                        'image_height' => '',
+//                        'cache_minute' => 1,
+//                    );
+//                    echo $this->board->latest($config_side3);
                     //제품판매
-                    $config_side4 = array(
-                        'skin' => 'doctormoa_main',
-                        'brd_key' => 'b-b-1',
-                        'limit' => 5,
-                        'length' => 40,
-                        'is_gallery' => '',
-                        'image_width' => '',
-                        'image_height' => '',
-                        'cache_minute' => 1,
-                    );
-                    echo $this->board->latest($config_side4);
+//                    $config_side4 = array(
+//                        'skin' => 'doctormoa_main',
+//                        'brd_key' => 'b-b-1',
+//                        'limit' => 5,
+//                        'length' => 40,
+//                        'is_gallery' => '',
+//                        'image_width' => '',
+//                        'image_height' => '',
+//                        'cache_minute' => 1,
+//                    );
+//                    echo $this->board->latest($config_side4);
                     //구인구직
-                    $config_side5 = array(
-                        'skin' => 'doctormoa_main',
-                        'brd_key' => 'b-b-2',
-                        'limit' => 5,
-                        'length' => 40,
-                        'is_gallery' => '',
-                        'image_width' => '',
-                        'image_height' => '',
-                        'cache_minute' => 1,
-                    );
-                    echo $this->board->latest($config_side5);
-                    //공지사항
+//                    $config_side5 = array(
+//                        'skin' => 'doctormoa_main',
+//                        'brd_key' => 'b-b-2',
+//                        'limit' => 5,
+//                        'length' => 40,
+//                        'is_gallery' => '',
+//                        'image_width' => '',
+//                        'image_height' => '',
+//                        'cache_minute' => 1,
+//                    );
+//                    echo $this->board->latest($config_side5);
+//                    공지사항
                     $config_side6 = array(
                         'skin' => 'doctormoa_main',
                         'brd_key' => 'b-b-3',
@@ -287,14 +285,14 @@
                     ?>
 
                 </div>
-                <div class="time-o">
-                    <div class="phone-i"></div>
-                    <div class="time-t">
-                        <p class="p-num">031-778-7847</p>
-                        <p class="p-time">운영시간 : 평일 09:00 ~ 18:00</p>
-                        <p class="p-time2">(토/일/공휴일 휴무)</p>
-                    </div>
-                </div>
+<!--                <div class="time-o">-->
+<!--                    <div class="phone-i"></div>-->
+<!--                    <div class="time-t">-->
+<!--                        <p class="p-num">031-778-7847</p>-->
+<!--                        <p class="p-time">운영시간 : 평일 09:00 ~ 18:00</p>-->
+<!--                        <p class="p-time2">(토/일/공휴일 휴무)</p>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </div>
     </div>

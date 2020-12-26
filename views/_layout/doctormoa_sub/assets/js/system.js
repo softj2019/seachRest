@@ -353,7 +353,7 @@ $(document).ready(function($) {
 		if (window.top === window.self) {
 
 			// Reload the page over HTTPS
-			location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+			//location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 
 			// If not top-level, display a message
 			// Note: CodePen does not allow an `<iframe>` to reload the top-level frame (browser window). See about the `sandbox` attribute at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#Attributes.
